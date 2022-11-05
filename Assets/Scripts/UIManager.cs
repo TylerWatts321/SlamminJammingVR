@@ -7,7 +7,7 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
     [SerializeField]
-    private TMPro.TextMeshProUGUI noteText;
+    private Image noteColor;
     
     public void Awake()
     {
@@ -38,6 +38,6 @@ public class UIManager : MonoBehaviour
                 newColor = Color.yellow;
                 break;
         }
-        noteText.color = newColor;
+        noteColor.color = newColor;
     }
 }
