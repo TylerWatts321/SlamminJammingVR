@@ -8,4 +8,6 @@ public class Damage : Button
     {
         PlayerStats.instance.RemoveScore(20);
     }
+
+    
 }
