@@ -1563,7 +1563,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573701288}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: bd87b666bbef3e8439bc86786b9d5d39, type: 3}
@@ -3153,7 +3153,7 @@ MonoBehaviour:
   fileLocation: Assets_StreamingAssets_we_made_a_chart_pog.mid
   noteTime: 1
   noteSpawnY: 7
-  noteTapY: 0
+  noteTapY: -0.5
 --- !u!1 &1835909501
 GameObject:
   m_ObjectHideFlags: 0

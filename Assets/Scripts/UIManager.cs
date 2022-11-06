@@ -24,16 +24,16 @@ public class UIManager : MonoBehaviour
         Color newColor = Color.black;
         switch(noteType)
         {
-            case Note.NoteType.Red:
+            case Note.NoteType.Left:
                 newColor = Color.red;
                 break;
-            case Note.NoteType.Green:
+            case Note.NoteType.Down:
                 newColor = Color.green;
                 break;
-            case Note.NoteType.Blue:
+            case Note.NoteType.Right:
                 newColor = Color.blue;
                 break;
-            case Note.NoteType.Yellow:
+            case Note.NoteType.Up:
                 newColor = Color.yellow;
                 break;
         }

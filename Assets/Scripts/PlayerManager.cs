@@ -22,7 +22,7 @@ public class PlayerManager : MonoBehaviour
     public void Start()
     {
         currentNote = new Note();
-        currentNote.type = Note.NoteType.Red;
+        currentNote.type = Note.NoteType.Down;
     }
 
     public void UpdatePlayerNote(Note note)
