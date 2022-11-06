@@ -29,7 +29,10 @@ public class SongManager : MonoBehaviour
             return noteTapY - (noteSpawnY - noteTapY);
         }
     }
-
+    private void OnEnable()
+    {
+        audioSource.enabled = true;
+    }
     public static MidiFile midiFile;
     // Start is called before the first frame update
     void Start()

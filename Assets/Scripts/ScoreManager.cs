@@ -17,13 +17,13 @@ public class ScoreManager : MonoBehaviour
     {
         comboScore += 1;
         Instance.hitSFX.Play();
-        PlayerStats.instance.AddScore(comboScore);
+        PlayerStats.instance.crowdScore++;
     }
     public static void Miss()
     {
         comboScore = 0;
         Instance.missSFX.Play();
-        PlayerStats.instance.RemoveScore(10);
+        PlayerStats.instance.RemoveScore(3);
     }
     private void Update()
     {

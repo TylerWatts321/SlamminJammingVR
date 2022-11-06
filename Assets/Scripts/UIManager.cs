@@ -18,7 +18,7 @@ public class UIManager : MonoBehaviour
         else
             Destroy(this);
     }
-
+    
     public void SwapNoteColor(Note.NoteType noteType)
     {
         Color newColor = Color.black;

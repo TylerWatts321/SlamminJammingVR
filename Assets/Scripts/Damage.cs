@@ -9,7 +9,7 @@ public class Damage : Button
         PlayerManager.instance.playerHit = true;
     }
 
-    public void OnTriggerStay(Collider other)
+    public void OnTriggerExit(Collider other)
     {
         if (other.CompareTag(handToCheck.ToString()))
             PlayerManager.instance.playerHit = false;
