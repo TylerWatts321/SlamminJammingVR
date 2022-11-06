@@ -6,6 +6,7 @@ public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager instance;
     public Note currentNote;
+    public bool playerHit = false;
 
     public void Awake()
     {
@@ -29,4 +30,6 @@ public class PlayerManager : MonoBehaviour
         currentNote = note;
         UIManager.instance.SwapNoteColor(currentNote.type);
     }
+
+    
 }

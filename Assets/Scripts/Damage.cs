@@ -6,8 +6,13 @@ public class Damage : Button
 {
     public override void PerformAction()
     {
-        PlayerStats.instance.RemoveScore(20);
+        PlayerManager.instance.playerHit = true;
     }
 
-    
+    public void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag(handToCheck.ToString()))
+            PlayerManager.instance.playerHit = false;
+    }
+
 }

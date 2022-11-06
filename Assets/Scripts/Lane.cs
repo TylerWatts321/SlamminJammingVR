@@ -7,7 +7,7 @@ using UnityEngine;
 public class Lane : MonoBehaviour
 {
     public Melanchall.DryWetMidi.MusicTheory.NoteName noteRestriction;
-    public KeyCode input;
+    public Note.NoteType noteKey;
     public GameObject notePrefab;
     List<NoteObject> notes = new List<NoteObject>();
     public List<double> timeStamps = new List<double>();
@@ -51,7 +51,7 @@ public class Lane : MonoBehaviour
             double marginOfError = SongManager.Instance.marginOfError;
             double audioTime = SongManager.GetAudioSourceTime() - (SongManager.Instance.inputDelayInMilliseconds / 1000.0);
 
-            if (Input.GetKeyDown(input))
+            if (noteKey.Equals(PlayerManager.instance.currentNote) && PlayerManager.instance.playerHit)
             {
                 if (Math.Abs(audioTime - timeStamp) < marginOfError)
                 {
