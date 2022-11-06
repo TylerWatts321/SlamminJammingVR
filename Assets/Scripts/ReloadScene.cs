@@ -9,10 +9,4 @@ public class ReloadScene : Button
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

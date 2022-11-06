@@ -7,6 +7,7 @@ public class Damage : Button
     public override void PerformAction()
     {
         PlayerManager.instance.playerHit = true;
+        Debug.Log("test");
     }
 
     public void OnTriggerExit(Collider other)
