@@ -2824,8 +2824,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteRestriction: 4
-  noteKey: 3
-  notePrefab: {fileID: 7667297645893753746, guid: 1e9c4f0f1399fef46a93a844d7caf29e,
+  noteKey: 0
+  notePrefab: {fileID: 5714308695950805484, guid: fde8ed9f8eaf2f84896603dc00883fb4,
     type: 3}
   timeStamps: []
 --- !u!1001 &1036710308
@@ -3400,7 +3400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteRestriction: 2
-  noteKey: 0
+  noteKey: 2
   notePrefab: {fileID: 5714308695950805484, guid: 61acbbb13f9b8044db43316f92b5c6b4,
     type: 3}
   timeStamps: []
@@ -3460,7 +3460,7 @@ MonoBehaviour:
   fileLocation: Assets_StreamingAssets_we_made_a_chart_pog.mid
   noteTime: 1
   noteSpawnY: 7
-  noteTapY: 2
+  noteTapY: 0
 --- !u!1 &1309371644
 GameObject:
   m_ObjectHideFlags: 0
@@ -3869,7 +3869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteRestriction: 7
-  noteKey: 2
+  noteKey: 3
   notePrefab: {fileID: 8308262076576341504, guid: 3d1f862e8f49eec4b95309754dcfc6b3,
     type: 3}
   timeStamps: []
@@ -4365,7 +4365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteRestriction: 5
   noteKey: 1
-  notePrefab: {fileID: 5714308695950805484, guid: fde8ed9f8eaf2f84896603dc00883fb4,
+  notePrefab: {fileID: 7667297645893753746, guid: 1e9c4f0f1399fef46a93a844d7caf29e,
     type: 3}
   timeStamps: []
 --- !u!1 &2063361123 stripped
