@@ -33,6 +33,12 @@ public class SongManager : MonoBehaviour
     {
         audioSource.enabled = true;
     }
+
+    private void OnDisable()
+    {
+        audioSource.enabled = false;
+        Destroy(this);
+    }
     public static MidiFile midiFile;
     // Start is called before the first frame update
     void Start()

@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Lane : MonoBehaviour
 {
@@ -12,16 +13,16 @@ public class Lane : MonoBehaviour
     List<NoteObject> notes = new List<NoteObject>();
     public List<double> timeStamps = new List<double>();
 
+    public Image laneImage;
     int spawnIndex = 0;
     int inputIndex = 0;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
     public void SetTimeStamps(Melanchall.DryWetMidi.Interaction.Note[] array)
     {
+        laneImage.color = new Color(laneImage.color.r, laneImage.color.g, laneImage.color.b, 24);
+
         foreach (var note in array)
         {
             if (note.NoteName == noteRestriction)
@@ -34,6 +35,7 @@ public class Lane : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ShowIndicator();
         if (spawnIndex < timeStamps.Count)
         {
             if (SongManager.GetAudioSourceTime() >= timeStamps[spawnIndex] - SongManager.Instance.noteTime)
@@ -74,6 +76,11 @@ public class Lane : MonoBehaviour
         }       
     
     }
+    private void ShowIndicator()
+    {
+            
+    }
+
     private void Hit()
     {
         ScoreManager.Hit();

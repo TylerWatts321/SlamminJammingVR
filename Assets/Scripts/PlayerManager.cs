@@ -27,7 +27,6 @@ public class PlayerManager : MonoBehaviour
     public void UpdatePlayerNote(Note note)
     {
         currentNote = note;
-        UIManager.instance.SwapNoteColor(currentNote.type);
     }
 
     

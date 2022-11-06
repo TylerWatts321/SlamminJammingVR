@@ -28,6 +28,8 @@ public class PlayerStats : MonoBehaviour
     {
         crowdScore -= scoreRemoved;
         if (crowdScore <= 0)
-            return; //GameOver
+        {
+            SongManager.Instance.enabled = false;
+        }
     }
 }
